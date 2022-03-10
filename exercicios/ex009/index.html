@@ -4,32 +4,62 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Outras Formatações</title>
+    <title>Listas</title>
 </head>
 <body>
-    <h1>Outras formatações</h1>
-    <h2>Codigo-fonte / Pré-formatação</h2>
-    <p>O comando <code>document.getElementById('teste')</code> é escrito em linguagem JavaScript</p>
-    <pre>
-        <code>
-    num = int(input)('Digite um número'))
-    if num % 2 == 0;
-        print(f'0 número {num} é PAR')
-    else;
-        print(f'0 número {num} é ÍMPAR)
-    print('Fim do programa')
-        </code>
-    </pre>
-    <h2>Citações</h2>
-    <p>Como diria o pai de um amigo: <q>o computador é um burro muito rápido</q></p>
-    <h2>Citações completas</h2>
-    <p>Segundo Eric Freeman no seu livro Use a Cabeça! Programação em HTML5</p>
-    <blockquote cite="https://www.google.com.br/books/edition/Use_a_Cabe%C3%A7a_Programa%C3%A7%C3%A3o_em_HTML_5/mKW6BAAAQBAJ?hl=pt-BR&gbpv=1&dq=html&printsec=frontcover">
-        A HTML tem estado em uma corrida louca
-    </blockquote>
-    <h2>Abreviações</h2>
-    <p>Estou estudando <abbr title="HyperText Markup Language">HTML</abbr> e <abbr title="Cascading Style Sheets">CSS</abbr>. Estou adorando!</p>
-    <h2>Texto invertido</h2>
-    <p><bdo dir="rtl">Estou aprendendo a criar coisas em HTML.</bdo></p>
+    <h1>Trabalhando com Listas</h1>
+    <h2>Listas Ordenadas</h2>
+    <ol type="1" start="1"> <!--1 A a I i -->
+        <li>Acordar
+        <li>Tomar café
+        <li>Estudar</li>
+        <li>Se arrumar</li>
+        <li>Escovar os dentes</li>
+        <li>Pegar as coisas e colocar no carro</li>
+        <li>Ir ao trabalho</li>
+        <li>Trabalhar</li>
+        <li>Voltar do trabalho</li>
+        <li>Estudar</li>
+        <li>Tomar Banho</li>
+        <li>Jantar</li>
+        <li>Aproveitar o tempo</li>
+        <li>Dormir</li>
+    </ol>
+
+        <h2>Lista Não Ordenadas</h2>
+        <ul type="square"> <!-- square disk circle -->
+        <li>Tomate</li> 
+        <li>Batata</li>
+        <li>Banana</li>
+        <li>Cebola</li>
+        <li>Quiabo</li> 
+        <li>Rabanete</li>
+        <li>Frango</li>
+        <li>Carne</li>
+        <li>Creme de leite</li>
+        <li>Batata Palha</li>
+        <li>Refrigerante</li>
+        </ul>
+    <h2>Minhas Linguagens Favoritas</h2>
+
+    <ol>
+        <li>Antigas</li>
+            <ol type="a">
+                <li>Delphi</li>
+                <li>Clipper</li>
+                <li>Fortran</li>
+                <li>Visual Basic</li>
+            </ol>
+        <li>Novas</li>
+        <ol type="a" start="5">
+            <li>JavaScript</li>
+            <li>Python</li>
+            <li>Kotlin</li>
+            <li>PHP</li>
+        </ol>
+    </ol>
+
+
+
 </body>
 </html>
