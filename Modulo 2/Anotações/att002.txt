@@ -1,0 +1,3 @@
+plugin para descobrir as fontes em textos: ninja fonts
+
+sites para descobrir fontes em imagens: whatfontis.com /  fontsquirrel.com  /  myfonts.com
