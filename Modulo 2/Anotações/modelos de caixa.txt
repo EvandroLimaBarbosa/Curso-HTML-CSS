@@ -1,0 +1,39 @@
+modelos de caixa em:
+
+---- BOX-LEVEL ----
+<div>
+<h1>-<h6>
+<p>
+<main>
+<header>
+<nav>
+<article>
+<aside>
+<footer>
+<form>
+<video>
+
+
+
+
+---- INLINE-LEVEL ----
+<span>
+<a>
+<code>
+<small>
+<strong>
+<em>
+<sup>-<sub>
+<label>
+<button>
+<input>
+<select>
+
+
+box level faz uma caixa do inicio ao fim da pagina interrompendo o texto
+
+inline level faz uma caixa menor sem interromper o texto
+
+usar     [margin: auto;]        para centralizar a caixa no meio da pagina
+
+para alterar para inline para box é só usar " display: block; "  oou  " display: inline; " oou " display: blockline; "
