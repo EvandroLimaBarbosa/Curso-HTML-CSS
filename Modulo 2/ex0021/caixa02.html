@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grouping Tags</title>
+    <style>
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+            background-color: dimgray;
+            margin: 0px;
+        }
+        header {
+            background-color: white;
+            padding: 10px;
+            margin: 10px;
+        }
+        nav {
+            background-color: rgb(62, 62, 62);
+            padding: 10px;
+        }
+        nav > a {
+            text-decoration: none;
+            color: white;
+            font-weight:bold ;
+            margin: 30px;
+        }
+        nav > a:hover {
+            text-decoration: underline;
+            margin-left: 11px;
+
+        }
+        nav > a:hover::before {
+            content: '⇒ ';
+        }
+        main {
+            background-color: white;
+            padding: 10px;
+            margin: 10px;
+        }
+        article{
+            background-color: lightgray;
+        }
+        article > aside {
+            background-color: rgb(129, 129, 129);
+        }
+        footer {
+            background-color: black;
+            color:  white;
+            text-align: center;
+            padding: 5px;
+            margin: 0px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Meu site</h1>
+        <nav>
+             <a href="#">Link</a>
+             <a href="#">Link</a>
+             <a href="#">Link</a>
+             <a href="#">Link</a>
+             <a href="#">Link</a>     
+        </nav>
+    </header>
+    <main>
+        <section id="assuntos">
+            Esportes Politica e Tecnologia
+        </section>
+            <section id="noticias">
+                <article>
+                    <h2>Noticias sobre o Brasil</h2>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ullam dolore ipsam vero? Doloremque expedita aspernatur dolorum maiores quisquam nobis quod magni minima omnis tempore error repudiandae, atque consequuntur. Tempora, vero?</p>
+                    <aside>
+                        <p>Artigo escrito por José da Silva</p>
+                    </aside>
+                </article>
+                <article>
+
+                </article>
+            </section>
+    </main>
+    <footer>
+        <p>Desenvolvido por Evandro Lima</p>
+    </footer>
+</body>
+</html>
