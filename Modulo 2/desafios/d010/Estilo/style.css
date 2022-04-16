@@ -10,7 +10,7 @@
 }
 
 :root{
-    --cor0: #ebe5c5;
+    --cor0: #cdebc5;
     --cor1: #83e1ad;
     --cor2: #3ddc84;
     --cor3: #2fa866;
@@ -20,6 +20,7 @@
     --fonte-padrao: Arial, Verdana, Helvetica, sans-serif;
     --fonte-destaque: 'Bebas Neue', cursive;
     --fonte-android: 'Android', cursive;
+
 }
 
 *{
@@ -51,6 +52,14 @@ nav {
 
 main {
     background-color: white;
+    min-width: 300px;
+    max-width: 1000px;
+    margin: auto;
+    margin-bottom: 30px;
+    padding: 20px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.492);
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
 }
 
 main h1{
@@ -60,6 +69,16 @@ main h1{
 
 main h2{
     font-family: var(--fonte-android);
+}
+
+main img.pequena {
+    width: 50%;
+    display: block;
+    margin: auto;
+}
+
+main img{
+    width: 100%;
 }
 
 footer {
