@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        .container {
+            height: 100vh;
+            display: flex;
+            flex-direction: row;
+
+
+            justify-content: space-around;
+            align-items: center;
+        }
+        div.item{
+            display: flex;
+            width: 20%;
+            height: 150px;
+            border: 1px solid black;
+            justify-content: center;
+            align-items: center;
+        }
+        div#red {
+            background-color: red;
+        }
+        div#green {
+            background-color: green;
+        }
+        div#yellow {
+            background-color: yellow;
+        }
+        div#blue {
+            background-color: blue;
+        }
+
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="item" id="red">
+              vermelho
+        </div>
+        <div class="item" id="green">
+             verde
+        </div>
+        <div class="item" id="yellow">
+             amarelo
+        </div>
+        <div class="item" id="blue">
+            azul
+       </div>
+    </div>
+</body>
+</html>
