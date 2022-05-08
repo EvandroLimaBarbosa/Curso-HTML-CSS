@@ -8,4 +8,7 @@ https://evandrolimabarbosa.github.io/Curso-HTML-CSS/Modulo%202/desafios/d010/and
 
 
 Flexbox:
-https://evandrolimabarbosa.github.io/Curso-HTML-CSS/Modulo%203/flexbox.html
+https://evandrolimabarbosa.github.io/Curso-HTML-CSS/projetos-pessoais/flexbox/flexbox.html
+
+Css-Grid:
+https://evandrolimabarbosa.github.io/Curso-HTML-CSS/projetos-pessoais/css-grid/ex001/index.html
