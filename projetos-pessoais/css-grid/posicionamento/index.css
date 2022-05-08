@@ -16,8 +16,32 @@
     grid-template-rows: 1fr 1fr 1fr;
 
     grid-gap: 5px;
+
+    justify-items: center;
+    align-items: center;
 }
 
 .container > div {
-    background: #7159C1; 
+    background: #7159C1;
+    width: 50%;
+    height: 50%;
+}
+
+.center {
+    display: grid;
+    justify-self: end;
+    align-self: end;
+}
+
+.center > div {
+    width: 50%;
+    height: 50%;
+
+    background-color: rgb(212, 44, 25);
+    justify-self: center;
+    align-self: center;
+}
+
+.center > div:hover {
+    background-color: black;
 }
