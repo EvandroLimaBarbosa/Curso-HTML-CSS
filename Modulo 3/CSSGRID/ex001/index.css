@@ -1,3 +1,7 @@
+:root{
+    --margin: 10px;
+}
+
 * {
     margin: 0;
     padding: 0;
@@ -26,31 +30,31 @@
 .quadrado-header {
     grid-area: h;
     background: rgb(86, 156, 255);
-    margin: 5px;
+    margin: var(--margin);
 }
 
 .quadrado-Esquerda {
     grid-area: e;
     background: rgb(255, 81, 81);
-    margin: 0px 0px 0px 5px;
+    margin: 0px 0px 0px var(--margin);
 }
 
 .quadrado-Centro {
     grid-area: c;
     background: rgb(114, 255, 114);
-    margin: 0px 5px;
+    margin: 0px var(--margin);
 }
 
 .quadrado-Direita {
     grid-area: d;
     background: rgb(255, 81, 81);
-    margin: 0px 5px 0px 0px;
+    margin: 0px var(--margin) 0px 0px;
 }
 
 .quadrado-footer {
     grid-area: f;
     background: rgb(248, 140, 58);
-    margin: 5px;
+    margin: var(--margin);
 }
 
 h1 {
