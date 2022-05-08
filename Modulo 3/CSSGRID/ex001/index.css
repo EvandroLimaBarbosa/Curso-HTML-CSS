@@ -1,0 +1,60 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}  
+
+.quadrado {
+    margin: 100px auto 10px auto;
+    width: 400px;
+    height: 400px;
+    background-color: rgb(249, 249, 114);
+
+    display: grid;
+    grid-template-columns: 1fr 2fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+
+    grid-template-areas: 
+    "h h h"
+    "e c d"
+    "f f f"   
+    ;
+
+    grid-gap: 1px;
+}
+
+.quadrado-header {
+    grid-area: h;
+    background: rgb(86, 156, 255);
+    margin: 5px;
+}
+
+.quadrado-Esquerda {
+    grid-area: e;
+    background: rgb(255, 81, 81);
+    margin: 0px 0px 0px 5px;
+}
+
+.quadrado-Centro {
+    grid-area: c;
+    background: rgb(114, 255, 114);
+    margin: 0px 5px;
+}
+
+.quadrado-Direita {
+    grid-area: d;
+    background: rgb(255, 81, 81);
+    margin: 0px 5px 0px 0px;
+}
+
+.quadrado-footer {
+    grid-area: f;
+    background: rgb(248, 140, 58);
+    margin: 5px;
+}
+
+h1 {
+    font: bold normal 40px Arial, Helvetica, sans-serif;
+    text-align: center;   
+    font-variant: normal;
+}
