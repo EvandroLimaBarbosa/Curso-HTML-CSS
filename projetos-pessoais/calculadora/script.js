@@ -1,71 +1,130 @@
 let res = document.getElementById('res');
+var textocalculo = document.getElementById('calculo');
+var simbolo
+var primeiroresultado
+var segundoresultado
 
-var otoresultado
+function calcular(simbolo){
+    primeiroresultado = res.innerText
+    res.innerText = '0'
+    textocalculo.innerText = `${primeiroresultado} ${simbolo}`
+}
+
 
 function limpar (){
     res.innerHTML = '0'
+    textocalculo.innerText = ''
 }
 
 function apagar (){
-        let inputText = res.value
-        res.value = inputText.substring(0,inputText.length-1)
-        res.innerText = res.value
+
 }
 
-function sezero() {
-    if (res.value == '0') {
-        res.innerHTML = ''
-    }
+function sezero (){
+if (res.innerText == '0') {
+    res.innerText = ''
+}
 }
 
 function n1 (){
-    res.innerHTML += '1'
     sezero()
+    res.innerText += '1'
+
 }
 
 function n2 (){
-    res.innerHTML += '2'
+    sezero()
+    res.innerText += '2'
 }
 
 function n3 (){
-    res.innerHTML += '3'
+    sezero()
+    res.innerText += '3'
 }
 
 function n4 (){
-    res.innerHTML += '4'
+    sezero()
+    res.innerText += '4'
 }
 
 
 function n5 (){
-    res.innerHTML += '5'
+    sezero()
+    res.innerText += '5'
 }
 
 function n6 (){
-    res.innerHTML += '6'
+    sezero()
+    res.innerText += '6'
 }
 
 function n7 (){
-    res.innerHTML += '7'
+    sezero()
+    res.innerText += '7'
 }
 
 function n8 (){
-    res.innerHTML += '8'
+    sezero()
+    res.innerText += '8'
 }
 
 function n9 (){
-    res.innerHTML += '9'
+    sezero()
+    res.innerText += '9'
 }
 
 
 function n0 (){
-    res.innerHTML += '0'
+    res.innerText += '0'
 }
 
 function somar() {
-    otoresultado = res + otoresultado
-    res.innerHTML = ''
+    simbolo = '+'
+    calcular(simbolo)
 }
 
-function somar() {
-    res.innerHTML = otoresultado
+function subtrair() {
+    simbolo = '-'
+    calcular(simbolo)
+}
+
+function multiplicar(){
+    simbolo = 'x'
+    calcular(simbolo)
+}
+
+function dividir(){
+    simbolo = '÷'
+    calcular(simbolo)
+}
+
+
+function apagar() {
+
+    valor = res.innerText;
+  
+    tamanho = valor.length
+  
+    res.innerText = valor.substring(0, tamanho-1)
+  
+  }
+
+function igual(){
+    segundoresultado = res.innerText
+    textocalculo.innerText += ` ${res.innerText}`;
+
+
+    if(simbolo=='+'){
+        res.innerText = +primeiroresultado + +segundoresultado
+    }else if(simbolo=='-'){
+        res.innerText = +primeiroresultado - +segundoresultado
+    }else if(simbolo=='x'){
+        res.innerText = +primeiroresultado * +segundoresultado
+    }else if(simbolo=='÷'){
+        res.innerText = +primeiroresultado / +segundoresultado
+    }
+
+
+    
+    textocalculo.innerText += ` = ${res.innerText}`
 }
